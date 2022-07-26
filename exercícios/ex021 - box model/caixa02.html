@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:gray;
+            margin: 0px;
+        }
+        header {
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        nav{
+            background-color: rgb(39, 39, 39);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 3px rgb(71, 71, 71);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto 40px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 40px;
+
+        }
+
+        footer {
+            background-color: blue;
+            color:white;
+            text-align: center;
+            padding: 10px; 
+            margin: 0px;
+        }
+    article {
+        padding: 5px;
+    }
+    article > aside {
+        background-color: lightgrey;
+        text-align: center;
+    }
+p {
+    text-align: justify;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+div#bola {
+    height:100px;
+    width:100px;
+    background-color:white;
+    border-radius: 50%;
+    text-align:center;
+    padding: 20px;
+    margin: 10px auto;
+
+
+}
+    </style>
+</head>
+<body>
+    <header>
+<h1>Meu Site</h1>
+<nav>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+</nav>
+</header>
+<main>
+<section id="assuntos">
+<h2>Assuntos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum unde deserunt enim nisi quae iure neque molestiae quisquam accusamus eius, similique nulla sed a dolorum possimus molestias sit odit dolorem.</p>
+</section>
+<section id="noticias">
+    <h2>Notícias atuais</h2>
+<article>
+    <h3>Notícia 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus enim quae aspernatur molestiae a rerum ad accusamus, exercitationem cumque modi nulla explicabo unde eaque excepturi vero laboriosam aliquid dolorem beatae.</p>
+<aside>
+    <p>Artigo escrito por Brunna</p>
+</aside>
+</article>
+<article>
+    <h3>Notícia 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus enim quae aspernatur molestiae a rerum ad accusamus, exercitationem cumque modi nulla explicabo unde eaque excepturi vero laboriosam aliquid dolorem beatae.</p>
+<aside>
+    <p>Artigo escrito por Brunna</p>
+</aside>
+</article>
+</section>
+
+</main>
+<footer>
+Desenvolvido pelo Curso em Vídeo.
+</footer>
+<div id="bola">0</div>
+</body>
+</html>

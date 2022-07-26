@@ -1,0 +1,11 @@
+{
+
+- arrumar última página
+
+- criar página de card (protótipo puxando imagens e dados + adicionar dados pessoais)
+
+- criar página de PC album (protótipo puxando imagens)
+
+- criar página do group generator (protótipo)
+
+}

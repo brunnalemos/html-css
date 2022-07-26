@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bias Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>First select all of your favorite groups:</h1>
+    <p>Double-click to select yout ULT. <br>Hit "Next" when you've selected all of your favorite groups.</p>
+    <nav id="bg-or-gg">
+        <button class="categories" id="bg-option" onclick="myClick('bg-option')">    
+        <p>Boygroups</p> </button>
+        <button class="categories" id="gg-option" onclick="myClick('gg-option')"> 
+            <p>Girlgroups</p>
+        </button>
+        <button class="categories" id="other-option" onclick="myClick('other-option')"> 
+            <p>Others</p>
+        </button>
+    </nav>
+    <section id="boygroups">
+        <ul role="tree" class ="tree" id="bgtree">
+    <li class="tree-option" id="txt-option">
+        <button class="groups unselected" id="txt" onclick="myClick('txt')">
+            <p>TXT</p>
+        </button>
+    </li>
+    <li class="tree-option" id="astro-option">
+        <button class="groups unselected" id="astro" onclick="myClick('astro')">
+        <p>Astro</p> </button>
+    </li>
+</ul>
+</section>  
+<section id="girlgroups">
+<button class="groups unselected" id="blackpink" onclick="myClick('blackpink')">   
+<p>Blackpink</p> </button>
+<button class="groups unselected" id="purple-kiss" onclick="myClick('purple-kiss')">
+    <p>Purple Kiss</p>
+</button>
+</section>  
+<section id="other-groups">
+    <button class="groups unselected" id="epik-high" onclick="myClick('epik-high')">   
+    <p>Epik High</p> </button>
+    <button class="groups unselected" id="akmu" onclick="myClick('akmu')">
+        <p>AKMU</p>
+    </button>
+    </section>  
+    <nav>
+        <button type="submit" class="next-page" id="submit" onclick="nextStage()">Next</button> 
+    </nav>
+    <script src="index.js"></script>
+</body>
+</html>

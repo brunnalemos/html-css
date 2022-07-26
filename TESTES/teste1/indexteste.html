@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+</head>
+<body>
+    <h1>Testes</h1>
+<button class="item" id="btn1">name?</button>
+<button class="item" id="btn2">email?</button>
+<div>
+  <p><mark style="background-color: rgba(28, 202, 202, 0.795);"><code>
+     window.LOQ = window.LOQ|| [] 
+     window.LOQ.push(['ready', async LO =>
+    {await LO.$internal.ready('visitors') 
+      var customData = {
+        'name' : name,
+        'email' : email
+      }
+      window.LOQ.push(['custom', customData])
+    }])
+    </code>
+<br><br><code>
+    window.LOQ = window.LOQ || []
+    window.LOQ.push(['ready', async LO => {
+    await LO.$internal.ready('visitor')
+    LO.visitor.identify(botNome, { email: botEmail})
+    }])</code>
+  <br><br><code>
+    button1.addEventListener("click", function () {
+    botName = document.getElementsByClassName("bluh")[0].textContent;
+    botEmail = document.getElementsByClassName("bluh")[1].textContent;
+      console.log(botName);
+      console.log(botEmail);})
+    </code><br><br><code>
+    document.body.addEventListener("preencheuEmail", function (){
+      let script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = "luckyorange.js";
+      document.body.appendChild(script);})
+    </code><br><br><code>
+    (function repeat() { // Your code if(error) { setTimeout(() => { repeat() }, 100) } })()</code></mark></p>
+</div>
+<script async>
+  function createP(){
+      const p = document.createElement('p')
+    p.textContent = 'Thats my name'
+    p.setAttribute('id', 'test1')
+    p.classList.add("bluh")
+    document.body.appendChild(p)
+};
+function createP2(){
+      const p2 = document.createElement('p')
+    p2.textContent = 'Thats my email'
+    p2.setAttribute('id', 'test2')
+    p2.classList.add("bluh")
+    document.body.appendChild(p2)
+};
+let botName;
+let botEmail;
+let button1 = document.getElementById("btn1")
+let button2 = document.getElementById("btn2")
+button1.addEventListener("click", createP);
+button2.addEventListener("click", createP2);
+button2.addEventListener("click", function (){
+  let script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "test.js";
+  document.body.appendChild(script);
+  console.log ("event fired");
+})
+function storeCustomData(){
+botName = document.getElementsByClassName("bluh")[0].textContent
+botEmail = document.getElementsByClassName("bluh")[1].textContent
+window.LOQ = window.LOQ || []
+window.LOQ.push(['ready', async LO => {
+await LO.$internal.ready('visitor')
+LO.visitor.identify(botName, { email: botEmail})
+}])
+console.log ("data stored")
+};
+document.body.addEventListener( "runLuckyOrangeCode", storeCustomData)
+document.getElementsByClassName("sc-gXfVKN fZhVRb MessageBubbleText content ")
+document.getElementsByClassName("sc-gXfVKN fZhVRb MessageBubbleText content ")
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
